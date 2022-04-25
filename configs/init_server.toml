@@ -1,0 +1,4 @@
+port=":8080"
+
+[storage]
+database_url="host=localhost dbname=wb_orders sslmode=disable"
