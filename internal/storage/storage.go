@@ -19,5 +19,9 @@ func (s *Storage) RestoreCache() {
 }
 
 func Init() {
+	db, err := newDB(s.config.DatabaseURL)
+	if err != nil {
+		logger.Error(subject).Err(err).Msg("cannot connect to postgres")
+	}
 
 }
